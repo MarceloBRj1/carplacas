@@ -13,39 +13,38 @@ import { Card, CardContent } from "@/components/ui/card"
 const MiddleBanner = () => {
 
   function armazenarImagens() {
-    const imagens = [
-      '/public/sky1.jpg',
-      'caminho/para/imagem2.jpg',
-      'caminho/para/imagem3.jpg',
-      'caminho/para/imagem4.jpg',
-      'caminho/para/imagem5.jpg'
+    const imagens = [ 
+      '/seila1.png',
+      '/skyl.jpg',
+      '/foto3.jpg',
+      '/foto4.jpg',
+      '/foto6.jpg',
     ];
-    const imagensArmazenadas = armazenarImagens();
-    
     return imagens;
   }
+  const imagensArmazenadas = armazenarImagens();
 
   return (
-      <div className='container w-full flex justify-center'>
-
-      <Carousel className="w-full max-w-xs">
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1} </span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-      </div>
+      <div className='container flex justify-center mb-10'>
+       <Carousel>
+        
+        <CarouselContent className='w-[1400px] h-[350px] '>
+        {imagensArmazenadas.map((imagem, index) => (
+            <CarouselItem key={index}>
+             <div className="p-1">
+               <Card>
+                 <CardContent className="flex items-center justify-center rounded-xl">
+                   <Image width={3500} height={500} src={imagem} alt={`Imagem ${index + 1}`} className='px-5 py-5 rounded-lg h-80' />
+                 </CardContent>
+                </Card>
+              </div>
+           </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+       <CarouselNext />
+      </Carousel>
+    </div>
   )
 }
 

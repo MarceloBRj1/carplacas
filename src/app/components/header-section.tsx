@@ -1,6 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import DropdownSide from './dropdown-sidebar'
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+  } from "@/components/ui/hover-card"
+  
 
 const HeaderSection = () => {
   return (
@@ -17,6 +23,7 @@ const HeaderSection = () => {
                   />
                 </a>
             </div>
+            
 
             <button type="button" className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
 
