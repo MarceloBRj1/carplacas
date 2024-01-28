@@ -15,12 +15,7 @@ const HeaderSection = () => {
         <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
                 <a href="#" title="" className="flex">
-                  <Image src='/placas2.png' 
-                  width={230} 
-                  height={100} 
-                  alt='ceplacas' 
-                  className='mt-0.2'
-                  />
+                  <h1 className='text-white text-4xl border p-2'> CE PLACAS</h1>
                 </a>
             </div>
             
