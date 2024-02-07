@@ -23,7 +23,7 @@ const MainSection = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptate veritatis, provident rem nihil fugit corporis ab porro recusandae. Non consectetur quos iusto reprehenderit deserunt dignissimos, soluta, architecto accusantium repellat numquam impedit nisi libero, quo quaerat amet sequi voluptate atque.
         </p>
 
-        <Button className='flex mx-auto mt-20 bg-blue-600 hover:bg-blue-700 focus:bg-blue-700"'>Entre em contato conosco</Button>
+        <Button className='flex mx-auto mt-20 bg-blue-600 hover:bg-blue-700 focus:bg-blue-700"'> <a target='_blank' href="https://api.whatsapp.com/send?phone=5585981093099&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!">Entre em contato conosco</a></Button>
       </div>
     </div>
   </div>

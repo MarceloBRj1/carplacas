@@ -15,7 +15,7 @@ const HeaderSection = () => {
         <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
                 <a href="#" title="" className="flex">
-                  <h1 className='text-white text-4xl border p-2'> CE PLACAS</h1>
+                  <h1 className='text-white text-4xl border p-2'> CAR PLACAS</h1>
                 </a>
             </div>
             
@@ -32,11 +32,11 @@ const HeaderSection = () => {
             </button>
 
             <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-                <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Placas </a>
+                <a href="#placas" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Placas </a>
 
-                <a href="#" title="" className="text-base font-medium  transition-all duration-200 hover:text-blue-600 focus:text-blue-600 text-white"> Contato </a>
+                <a href="#contato" title="" className="text-base font-medium  transition-all duration-200 hover:text-blue-600 focus:text-blue-600 text-white"> Contato </a>
 
-                <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Lojas </a>        
+                <a href="#lojas" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Lojas </a>        
             </div>
             <DropdownSide  />
         </nav>
