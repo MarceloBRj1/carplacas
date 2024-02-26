@@ -10,12 +10,18 @@ import {
 
 const HeaderSection = () => {
   return (
-    <header className="pb-6 bg-blue-950 lg:pb-0">
+    <header className="pb-6 bg- lg:pb-0">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
                 <a href="#" title="" className="flex">
-                  <h1 className='text-white text-4xl border p-2'> CAR PLACAS</h1>
+                  <Image 
+                  className='border-gray-100 rounded	border p-2'
+                  src={'/carplacasnew.png'}
+                  width={250}
+                  height={200}
+                  alt='carplcas' 
+                   />
                 </a>
             </div>
             
@@ -32,11 +38,11 @@ const HeaderSection = () => {
             </button>
 
             <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-                <a href="#placas" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Placas </a>
+                <a href="#placas" title="" className="text-base font-medium text-orange-400 transition-all duration-200 hover:text-blue-600 focus:text-blue-600 " > Placas </a>
 
-                <a href="#contato" title="" className="text-base font-medium  transition-all duration-200 hover:text-blue-600 focus:text-blue-600 text-white"> Contato </a>
+                <a href="#contato" title="" className="text-base font-medium text-orange-400  transition-all duration-200 hover:text-blue-600 focus:text-blue-600 "> Contato </a>
 
-                <a href="#lojas" title="" className="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Lojas </a>        
+                <a href="#lojas" title="" className="text-base font-medium text-orange-400 transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Lojas </a>        
             </div>
             <DropdownSide  />
         </nav>

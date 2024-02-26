@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Image  from 'next/image'
 import CardPrice from './cardprice'
 
@@ -6,12 +7,11 @@ import CardPrice from './cardprice'
 
 const PriceSection = () => {
 
-
   return (
-    <div className='flex justify-center text-center' id='placas'>
-    <div className="bg-white items-center">
+    <div className='flex justify-center bg-blue-900 text-center ' id='placas'>
+    <div className=" items-center bg-blue-900">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Conheça nossos Produtos</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-white">Conheça nossos Produtos</h2>
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
      <CardPrice
           modelo="Placa para Carro"

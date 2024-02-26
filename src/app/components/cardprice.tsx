@@ -26,16 +26,16 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
       </div>
       <div className="mt-4 flex justify-between">
         <div>
-          <h3 className="text-1xl text-gray-700">
+          <h3 className="text-1xl text-white">
             <div className='cursor-pointer'>
               <span aria-hidden="true" className="absolute inset-0"></span>
               {modelo}
             </div>
           </h3>
         </div>
-        <p className="text-sm font-medium text-gray-900"> <span className='text-lime-500'>R$</span> {price}</p>
+        <p className="text-[20px] font-medium text-white"> <span className='text-lime-500'>R$</span> {price}</p>
       </div>
-      <p className='text-end text-sm'>{parcela}</p>
+      <p className=' text-white text-end text-sm'>{parcela}</p>
     </div>
   );
 };
