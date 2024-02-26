@@ -25,10 +25,11 @@ const MiddleBanner = () => {
   const imagensArmazenadas = armazenarImagens();
 
   return (
-      <div className='container flex justify-center mb-10'>
-       <Carousel>
+    <div className='bg-slate-100'>
+      <div className=' container flex mb-4'>
+       <Carousel className='mt-5'>
         
-        <CarouselContent className='w-[1400px] h-[350px] '>
+        <CarouselContent className=' '>
         {imagensArmazenadas.map((imagem, index) => (
             <CarouselItem key={index}>
              <div className="p-1">
@@ -45,6 +46,8 @@ const MiddleBanner = () => {
        <CarouselNext />
       </Carousel>
     </div>
+    </div>
+      
   )
 }
 

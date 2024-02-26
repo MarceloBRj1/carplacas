@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import DropdownSide from './dropdown-sidebar'
@@ -6,12 +7,17 @@ import {
     HoverCardContent,
     HoverCardTrigger,
   } from "@/components/ui/hover-card"
-  
+import { motion } from 'framer-motion'
 
 const HeaderSection = () => {
   return (
-    <header className="pb-6 bg- lg:pb-0">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <motion.header
+    className="pb-6 lg:pb-0 bg-slate-100">
+    <motion.div
+    initial={{ top: -100}}
+    animate={{ top: 0 }}
+    transition={{ duration: 0.5 }}
+    className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
                 <a href="#" title="" className="flex">
@@ -46,8 +52,8 @@ const HeaderSection = () => {
             </div>
             <DropdownSide  />
         </nav>
-    </div>
-</header>
+    </motion.div>
+</motion.header>
   )
 }
 
