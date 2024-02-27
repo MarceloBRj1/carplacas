@@ -12,23 +12,23 @@ const PriceSection = () => {
     exit: { opacity: 0, y: 50 }
   }
   return (
-    <motion.div
+    <motion.div id='placas' 
     initial={{ opacity: 0, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: 100 }}
     transition={{ duration: 0.5 }}
 
-    className='flex justify-center bg-blue-900 text-center ' id='placas'>
+    className='flex justify-center bg-blue-900 text-center rounded'>
     <div className=" items-center bg-blue-900">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-white">Conheça nossos Produtos</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-orange-400 mt-10 ">Conheça nossos Produtos</h2>
+      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         
 
-        className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        className="-mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
      <CardPrice
           modelo="Placa para Carro"
           price="280"

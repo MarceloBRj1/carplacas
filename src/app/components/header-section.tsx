@@ -14,19 +14,19 @@ const HeaderSection = () => {
     <motion.header
     className="pb-6 lg:pb-0 bg-slate-100">
     <motion.div
-    initial={{ top: -100}}
-    animate={{ top: 0 }}
-    transition={{ duration: 0.5 }}
-    className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.4 }}
+    className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8 py-2">
         <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
                 <a href="#" title="" className="flex">
                   <Image 
-                  className='border-gray-100 rounded	border p-2'
+                  className='border-gray-100 rounded-lg bg-slate-300/85 border p-2'
                   src={'/carplacasnew.png'}
                   width={250}
                   height={200}
-                  alt='carplcas' 
+                  alt='carplacas' 
                    />
                 </a>
             </div>
