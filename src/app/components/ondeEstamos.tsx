@@ -13,10 +13,10 @@ const AreWe = () => {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     exit={{ opacity: 0, y: 100 }}
-    className=' bg-blue-900 h-[600px] mt-5 w-screen rounded'>
+    className=' bg-blue-900 h-[600px]  w-screen rounded'>
       .
       <div>
-        <h1 className='text-center text-white font-mono font-semibold text-3xl'>Onde Estamos</h1>
+        <h1 className='text-center text-white font-mono font-semibold text-3xl underline'>Onde Estamos</h1>
         <div className= 'grid grid-cols-2'>
         <div className='text-center text-white font-semibold flex flex-col'>
         <span className='text-orange-400 font-mono text-xl'>Loja Maestro</span>
@@ -43,7 +43,8 @@ const AreWe = () => {
           <motion.button
           whileHover={{ scale: 1.1 }}
           className='bg-sky-400 rounded-lg hover:bg-sky-500'>
-              <a href="https://waze.com/ul/h7pkd6m6bc" target='_blank'>
+              <a href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!
+              " target='_blank'>
               <FaWaze size={50} />
               </a>
           </motion.button>

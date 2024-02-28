@@ -15,8 +15,9 @@ export default function Home() {
   
   return (
   <div>
-    <link rel="icon" href="/logoce2.png" sizes="any" />
+    <link rel="icon" href="/letra-c.png" sizes="any" />
     <HeaderSection />
+
     <MiddleBanner />
     <MainSection />
     <PriceSection />

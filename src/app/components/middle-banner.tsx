@@ -33,7 +33,7 @@ const MiddleBanner = () => {
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
     
-    className='bg-slate-100 '>
+    className='bg-slate-100 mt-20 '>
       <div className=' container'>
        <Carousel className=''>
         

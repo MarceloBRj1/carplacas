@@ -28,13 +28,15 @@ const MainSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           exit={{ opacity: 0, x: -100 }}
-          className="lg:py-24 lg:pl-24" // Adicionando pl-24 para alinhar o conteúdo à direita
+          className="lg:py-24 lg:pl-24"
         >
           <h2 className="text-3xl -mt-10 text-blue-900 font-bold sm:text-4xl text-left lg:text-right">Venha emplacar o seu carro com a gente!</h2>
 
           <p className="mt-4 text-gray-600 text-left font-sans text-2xl lg:text-right">Na <span className="text-orange-400">CARPLACAS</span>, priorizamos a qualidade em cada etapa do processo de fabricação. Utilizamos materiais premium e tecnologia de ponta para garantir que sua placa seja durável, resistente e mantenha sua legibilidade ao longo do tempo.</p>
 
-          <Button className='flex mx-auto mt-10 bg-orange-400 hover:bg-blue-900 focus:bg-blue-900'> <a target='_blank' href="https://api.whatsapp.com/send?phone=5585981093099&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!">Entre em contato conosco</a></Button>
+          <Button className='flex mx-auto mt-10 bg-orange-400 hover:bg-blue-900 focus:bg-blue-900'> 
+          <a target='_blank' href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!
+">Entre em contato conosco</a></Button>
         </motion.div>
       </div>
     </section>

@@ -17,9 +17,16 @@ const Footer = () => {
           
       </div>
 
-      <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right font-bold">
+      <p className=" text-center text-sm text-gray-500 lg:mt-0 lg:text-right font-bold">
         CARPLACAS &copy; 2024. Todos direitos Reservados.
       </p>
+      
+      <Image 
+        src={'/shlogo.png'}
+        width={100}
+        height={100}
+        alt='carplcas' 
+          />
     </div>
   </div>
 </footer>

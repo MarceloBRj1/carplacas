@@ -17,7 +17,8 @@ export default function BannerTop() {
         >
           Entre em contato
         </a>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20quero%20fazer%20um%20or%C3%A7amento!">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!
+">
           <strong className="font-semibold">(85)99695-0064   </strong>
           </a>
           <a href="#contato">

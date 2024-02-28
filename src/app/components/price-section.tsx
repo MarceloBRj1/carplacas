@@ -20,7 +20,7 @@ const PriceSection = () => {
 
     className='flex justify-center bg-blue-900 text-center rounded'>
     <div className=" items-center bg-blue-900">
-        <h2 className="text-2xl font-bold tracking-tight text-orange-400 mt-10 ">Conheça nossos Produtos</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-orange-400 mt-10 underline">Conheça nossos Produtos</h2>
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <motion.div
         initial={{ opacity: 0, x: -100 }}
