@@ -15,6 +15,7 @@ import {motion} from 'framer-motion'
 const Contato = () => {
   return (
     <motion.section
+    id='contato'
     initial={{ opacity: 0, y: -100 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
@@ -54,7 +55,7 @@ const Contato = () => {
           <h2 className="mt-4 text-xl font-bold text-blue-900 hover:text-orange-500 ">Instagram</h2>
           <p className=" text-sm text-black">
             Entre em contato via Instagram e veja as atualizações no nosso Feed
-            <span className='text-orange-500 text-2xl text-center hover:text-blue-900'> @carplacas</span>
+            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> @carplacas</span>
           </p>
         </a>
         
@@ -66,7 +67,7 @@ const Contato = () => {
           <h2 className="mt-4 text-xl font-bold text-blue-900 hover:text-orange-500 ">Gmail</h2>
           <p className=" text-sm text-black">
             Envie um email com sua duvida ou sugestão
-            <span className='text-orange-500 text-2xl text-center hover:text-blue-900'> atendimentocarplacas <br />@gmail.com</span>
+            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> atendimentocarplacas <br />@gmail.com</span>
           </p>
         </a>
         

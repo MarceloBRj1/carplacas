@@ -15,9 +15,10 @@ interface CardPriceProps {
   };
   children?: React.ReactNode;
   parcela?: string;
+  subtitle?: string;
 }
 
-const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, parcela }) => {
+const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, parcela,subtitle }) => {
   return (
     <motion.div
     whileHover={{ scale: 1.05 }}
@@ -32,7 +33,7 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
       </div>
       <div className="mt-4 flex justify-between">
         <div>
-          <h3 className="text-1xl text-white">
+          <h3 className="text-[20px] text-white">
             <div className='cursor-pointer'>
               <span aria-hidden="true" className="absolute inset-0"></span>
               {modelo}

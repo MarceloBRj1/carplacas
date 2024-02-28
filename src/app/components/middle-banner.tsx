@@ -18,10 +18,10 @@ const MiddleBanner = () => {
   function armazenarImagens() {
     const imagens = [ 
       '/agora1.png',
-      '/agora1.png',
-      '/agora1.png',
-      '/agora1.png',
       '/seila1.png',
+      '/agora1.png',
+      '/agora1.png',
+      '/agora1.png',
     ];
     return imagens;
   }

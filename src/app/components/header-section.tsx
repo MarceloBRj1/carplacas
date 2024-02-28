@@ -21,7 +21,10 @@ const HeaderSection = () => {
       >
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <a href="#" title="" className="flex">
+            <motion.a
+            whileTap={{ scale: 0.8 }}
+            whileHover={{scale: 1.1}}
+            href="#" title="" className="flex">
               <Image
                 className='border-gray-100 rounded-lg lg:mb-6 bg-white border p-2 mt-6'
                 src={'/carplacasnew.png'}
@@ -29,7 +32,7 @@ const HeaderSection = () => {
                 height={200}
                 alt='carplacas'
               />
-            </a>
+            </motion.a>
           </div>
 
           <div className={`${isOpen ? 'flex lg:hidden flex-wrap mt-6' : 'hidden'} items-center`}>
@@ -41,7 +44,7 @@ const HeaderSection = () => {
           <motion.button
             type="button"
             className="inline-flex p-2 text-white rounded-md lg:hidden focus:bg-orange-500 hover:bg-orange-500"
-            onClick={toggleMenu}
+            onClick={toggleMenu}  
             animate={{ rotate: isOpen ? 90 : 0 }}
           >
             {isOpen ? (
