@@ -19,7 +19,7 @@ const PriceSection = () => {
     transition={{ duration: 0.5 }}
 
     className='flex justify-center bg-blue-900 text-center rounded'>
-    <div className=" items-center bg-blue-900">
+    <div className=" flex items-center bg-blue-900">
         <h2 className="text-2xl font-semibold tracking-tight text-orange-400 mt-10 underline">Conheça nossos Produtos</h2>
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <motion.div
@@ -35,7 +35,7 @@ const PriceSection = () => {
           Image={Image}
           imgProps={{
             src: '/placatcerto.png',
-            alt: 'fodase',
+            alt: 'placa para carro',
             width: 1000,
             height: 350,
            }}
@@ -47,7 +47,7 @@ const PriceSection = () => {
           Image={Image}
           imgProps={{
             src: '/moto2.png',
-            alt: 'fodase',
+            alt: 'placa para moto',
             width: 1000,
             height: 350,
            }}
@@ -59,7 +59,7 @@ const PriceSection = () => {
           Image={Image}
           imgProps={{
             src: '/suporte.png',
-            alt: 'fodase',
+            alt: 'suporte para carro',
             width: 1000,
             height: 350,
            }}
@@ -70,7 +70,7 @@ const PriceSection = () => {
           Image={Image}
           imgProps={{
             src: '/cbm2.png',
-            alt: 'fodase',
+            alt: 'lacre para parafusos',
             width: 1000,
             height: 350,
            }}
