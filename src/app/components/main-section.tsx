@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const MainSection = () => {
   return (
-    <section className="mx-auto max-w-screen-xl px-4 mt-20 lg:mt-0 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 border-transparent">
+    <section className="container mx-auto max-w-screen-xl px-4 mt-20 lg:mt-0 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 border-transparent">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <motion.div
           initial={{ opacity: 0, y: -100 }}

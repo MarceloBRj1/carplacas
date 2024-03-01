@@ -7,6 +7,7 @@ import PriceSection from './components/price-section'
 import AreWe from './components/ondeEstamos'
 import Contato from './components/contato'
 import Footer from './components/footer'
+import Duvidas from './components/Duvidas'
 
 
 
@@ -17,12 +18,12 @@ export default function Home() {
   <div>
     <link rel="icon" href="/letra-c.png" sizes="any" />
     <HeaderSection />
-
     <MiddleBanner />
     <MainSection />
     <PriceSection />
-    <Contato />
+    <Duvidas />
     <AreWe /> 
+    <Contato />
     <Footer />
   </div>
   )

@@ -13,13 +13,13 @@ const AreWe = () => {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     exit={{ opacity: 0, y: 100 }}
-    className=' bg-blue-900 h-[650px]  w-screen rounded'>
+    className=' bg-blue-900 h-[650px] container  w-screen rounded-lg'>
       .
       <div>
-        <h1 className='text-center text-white font-mono font-semibold text-3xl mb-10 '>🌟 Grande Novidade: Agora com Duas Lojas para Melhor Atendê-lo! 🌟</h1>
+        <h1 className='text-center text-white font-sans font-semibold text-3xl mb-10 '> Grande Novidade: Agora com Duas Lojas para Melhor Atendê-lo!</h1>
         <div className= 'grid grid-cols-2'>
         <div className='text-center text-white font-semibold flex flex-col'>
-        <span className='text-orange-400 font-mono text-xl'>Matriz: Loja Maestro</span>
+        <span className='text-orange-400 font-sans text-xl'>Matriz: Loja Maestro</span>
         <p className='font-sans'>Av. Maestro Lisboa, 395, Lagoa Sapiranga - Coite, Fortaleza - CE, 60830-185</p>
       <iframe className='mt-3 self-center' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.009888294027!2d-38.480171388732906!3d-3.807941843567456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7457ba9aedbbf%3A0x2d6ca747e2c0b093!2sAv.%20Maestro%20Lisboa%2C%20395%20-%20Lagoa%20Sapiranga%20(Coit%C3%A9)%2C%20Fortaleza%20-%20CE%2C%2060830-185!5e0!3m2!1spt-BR!2sbr!4v1706888128628!5m2!1spt-BR!2sbr" width="500" height="350"> </iframe>
       <div className='mt-7 flex items-center self-center'>
