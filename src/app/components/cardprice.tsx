@@ -19,14 +19,14 @@ interface CardPriceProps {
 
 const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, parcela, subtitle }) => {
   const [showModal, setShowModal] = useState(false);
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
     setShowModal(true);
   };
 
-  const handleClickOutside = (event) => {
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
       setShowModal(false);
     }
   };
