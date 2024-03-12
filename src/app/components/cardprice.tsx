@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, MouseEvent } from 'react'
 import { motion } from "framer-motion"
 
 interface CardPriceProps {
@@ -25,7 +25,7 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
     setShowModal(true);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = (event: MouseEvent<HTMLDivElement>) => {
     if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
       setShowModal(false);
     }
