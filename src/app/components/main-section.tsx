@@ -34,8 +34,8 @@ const MainSection = () => {
 
           <p className="mt-4 text-gray-600 text-center font-sans text-2xl lg:text-right">Na <span className="text-orange-400">CAR PLACAS</span>, priorizamos a qualidade em cada etapa do processo de fabricação. Utilizamos materiais premium e tecnologia de ponta para garantir que sua placa seja durável, resistente e mantenha sua legibilidade ao longo do tempo.</p>
 
-          <Button size={'lg'} className='flex mx-auto mt-10 bg-orange-400 hover:bg-blue-900 focus:bg-blue-900'> 
-          <a  target='_blank' href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">Entre em contato conosco</a></Button>
+          <Button size={'lg'} className='flex mx-auto mt-10 lg:ml-40 bg-orange-400 hover:bg-blue-900 focus:bg-blue-900'> 
+          <a className='text-xl' target='_blank' href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">Entre em contato conosco</a></Button>
         </motion.div>
       </div>
     </section>

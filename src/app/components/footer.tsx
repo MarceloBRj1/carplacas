@@ -19,11 +19,12 @@ const Footer = () => {
       </div>
 
       <p className=" text-center text-sm text-gray-500 lg:mt-0 lg:text-right font-bold">
-        CARPLACAS &copy; 2024. Todos direitos Reservados.
+        CAR PLACAS &copy; 2024. Todos direitos Reservados.
       </p>
       <a target='_blank' href="
       https://www.instagram.com/gruposhautomotivo?igsh=MXJ0dTFtc2c0dmp2YQ==">
       <Image 
+        className=' hidden lg:flex md:flex'
         src={'/gruposh.png'}
         width={130}
         height={130}

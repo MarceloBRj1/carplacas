@@ -28,7 +28,7 @@ const PriceSection = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
         
 
-        className="-mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        className="-mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-4 xl:gap-x-8">
      <CardPrice
           modelo="Placa para Carro"
           price="280"
@@ -36,23 +36,23 @@ const PriceSection = () => {
           imgProps={{
             src: '/placatcerto.png',
             alt: 'placa para carro',
-            width: 1000,
-            height: 350,
+            width: 600,
+            height: 600,
            }}
            parcela='3x sem juros'
-           subtitle='particular, aluguel e oficial'
+           subtitle='Particular, Aluguel e Oficial'
       />
       <CardPrice
           modelo="Placa para Moto"
           price="180"
           Image={Image}
           parcela='3x sem juros'
-          subtitle='particular, aluguel e oficial'
+          subtitle='Particular, Aluguel e Oficial'
           imgProps={{
             src: '/moto2.png',
             alt: 'placa para moto',
-            width: 1000,
-            height: 350,
+            width: 600,
+            height: 600,
            }}
       />
       <CardPrice
@@ -62,8 +62,8 @@ const PriceSection = () => {
           imgProps={{
             src: '/suporte.png',
             alt: 'suporte para carro',
-            width: 1000,
-            height: 350,
+            width: 600,
+            height: 600,
            }}
       />
       <CardPrice
@@ -73,8 +73,8 @@ const PriceSection = () => {
           imgProps={{
             src: '/cbm2.png',
             alt: 'lacre para parafusos',
-            width: 1000,
-            height: 350,
+            width: 600,
+            height: 600,
            }}
       />
       </motion.div>

@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Car Placas | Home',
   description: 'Empresa de placas.',
+  icons: {
+    icon: '/letra-c.png',
+  }
 }
 
 export default function RootLayout({
