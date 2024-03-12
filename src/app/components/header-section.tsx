@@ -71,10 +71,10 @@ const HeaderSection = () => {
             )}
           </motion.button>
 
-          <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-            <a href="#placas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Placas</a>
-            <a href="#contato" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Contato</a>
-            <a href="#lojas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Lojas</a>
+          <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10 font-mono">
+            <a href="#placas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">PLACAS</a>
+            <a href="#contato" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">CONTATO</a>
+            <a href="#lojas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">LOJAS</a>
           </div>
           <DropdownSide />
         </nav>

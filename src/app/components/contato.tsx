@@ -24,12 +24,12 @@ const Contato = () => {
       <Separator />
     <motion.div
     
-    className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-lg text-center">
         <h2 className="text-4xl font-bold sm:text-4xl text-blue-900">Nossos meios de contato</h2>
   
         <p className="mt-4 text-black text-1.5xl font-sans">
-        Nossa equipe está sempre pronta para ajudá-lo em todas as etapas da instalação da sua placa. Na CarPlacas, oferecemos um atendimento personalizado para garantir que todas as suas necessidades sejam atendidas de forma eficiente e satisfatória.
+        Nossa equipe está sempre pronta para ajudá-lo em todas as etapas da instalação da sua placa. Na Car Placas, oferecemos um atendimento personalizado para garantir que todas as suas necessidades sejam atendidas de forma eficiente e satisfatória.
         </p>
       </div>
   
@@ -67,7 +67,7 @@ const Contato = () => {
           <h2 className="mt-4 text-xl font-bold text-blue-900 hover:text-orange-500 ">Gmail</h2>
           <p className=" text-sm text-black">
             Envie um email com sua duvida ou sugestão
-            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> atendimentocarplacas <br />@gmail.com</span>
+            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> atendimentocarplacas <br />@shemplacamentos.com</span>
           </p>
         </a>
         

@@ -8,6 +8,9 @@ import AreWe from './components/ondeEstamos'
 import Contato from './components/contato'
 import Footer from './components/footer'
 import Duvidas from './components/Duvidas'
+import { FaWhatsapp } from "react-icons/fa";
+import Zapfloat from './components/Zapfloat'
+
 
 
 
@@ -20,6 +23,7 @@ export default function Home() {
     <HeaderSection />
     <MiddleBanner />
     <MainSection />
+    <Zapfloat />
     <PriceSection />
     <Duvidas />
     <AreWe /> 
