@@ -13,7 +13,7 @@ const AreWe = () => {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     exit={{ opacity: 0, y: 100 }}
-    className='bg-blue-900 h-[1280px] md:h-[650px] lg:h-[700px] container mx-auto rounded-lg'>
+    className='bg-blue-900 h-[1300px] md:h-[650px] lg:h-[700px] container mx-auto rounded-lg'>
       .
         <h1 className=' text-center text-white font-sans font-semibold text-3xl mb-10 '> Grande Novidade: Agora com Duas Lojas para Melhor Atendê-lo!</h1>
       <div className='container'>
@@ -43,7 +43,7 @@ const AreWe = () => {
           <motion.button
           whileHover={{ scale: 1.1 }}
           className='bg-sky-400 rounded-lg hover:bg-sky-500'>
-              <a href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!
+              <a href="https://waze.com/ul/h7pkd6m6bc
               " target='_blank'>
               <FaWaze size={50} />
               </a>
