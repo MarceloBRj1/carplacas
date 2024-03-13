@@ -1,11 +1,13 @@
 'use client'
 import React, { useState, useRef, useEffect, MouseEvent } from 'react'
 import { motion } from "framer-motion"
+import { NextComponentType } from 'next';
 
 interface CardPriceProps {
   modelo: string;
   price: string;
-  Image: React.ElementType;
+  Image: NextComponentType<any, any, any>;
+  className?: string;
   imgProps: {
     src: string;
     alt: string;
@@ -61,17 +63,18 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
       </motion.div>
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue-800 bg-opacity-50 h-screen" onClick={handleClickOutside}>
-          <div ref={modalRef} className="bg-blue-800 p-8 rounded-lg max-w-7xl" onClick={(e) => e.stopPropagation()}>
-            <h2 className="text-2xl text-white font-bold mb-4">{modelo}</h2>
-            <div className="bg-gray-300 p-4">
-            <Image className=' object-contain object-center lg:h-full lg:w-full' {...imgProps} />
-            </div>
-            <p className="text-white mt-4">{subtitle}</p>
-            <button className="bg-red-500 px-4 py-2 rounded-lg mt-10 flex absolute top-0 right-12" onClick={() => setShowModal(false)}>
-              X
-            </button>
+          <div ref={modalRef} className="bg-white p-8 rounded-lg max-w-7xl flex flex-wrap" onClick={(e) => e.stopPropagation()}>
+              <h1 className="text-3xl flex text-red-900 font-bold mb-4">EM DESENVOLVIMENTO!!!</h1>
+              <h2 className="text-2xl text-blue-900 font-bold mb-4">{modelo}</h2>
+                <div className="bg-gray-300 flex p-4">
+                  <Image {...imgProps} />
+                </div>
+              <p className="text-white mt-4">{subtitle}</p>
+              <button className="bg-red-500 px-4 py-2 rounded-lg mt-10 flex absolute top-0 right-12" onClick={() => setShowModal(false)}>
+                X
+              </button>
           </div>
-        </div>
+      </div>
       )}
     </>
   );
