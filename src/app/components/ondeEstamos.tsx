@@ -25,8 +25,7 @@ const AreWe = () => {
       <div className='mt-7 flex items-center self-center'>
           <h1 className='mr-4 hover:text-orange-400 font-sans '>Ir com Waze</h1>
           <motion.button
-          whileHover={{ scale: 1.1 }}
-          className='bg-sky-400 rounded-lg hover:bg-sky-500'>
+            className='bg-sky-400 rounded-lg hover:bg-sky-500'>
               <a href="https://waze.com/ul/h7pkdk6v87" target='_blank'>
               <FaWaze size={50} />
               </a>
@@ -41,7 +40,7 @@ const AreWe = () => {
         <div className='mt-7 flex items-center self-center'>
           <h1 className='mr-4 hover:text-orange-400 font-sans'>Ir com Waze</h1>
           <motion.button
-          whileHover={{ scale: 1.1 }}
+          
           className='bg-sky-400 rounded-lg hover:bg-sky-500'>
               <a href="https://waze.com/ul/h7pkd6m6bc
               " target='_blank'>
