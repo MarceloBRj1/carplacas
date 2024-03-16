@@ -6,12 +6,12 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Zapfloat = () => {
   return (
     <motion.div 
-      className='fixed bottom-0 right-0 z-100 mr-10 mb-10'
+      className='fixed bottom-12 right-3 sm:z-10 sm:right-2 lg:botton-0 lg:right-0 lg:z-10 lg:mr-48'
       animate={{ y: [0, -10, 0] }} 
-      transition={{ duration: 1.5, repeat: Infinity }} 
+      transition={{ duration: 2, repeat: Infinity }} 
     >
       <a target='_blank' href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">
-        <IoLogoWhatsapp className='rounded-lg' size={60} fill='#25D366' />
+        <IoLogoWhatsapp className='rounded-lg' size={50} fill='#25D366' />
       </a>
     </motion.div>
   );

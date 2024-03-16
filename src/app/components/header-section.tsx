@@ -35,10 +35,10 @@ const HeaderSection = () => {
             </motion.a>
           </div>
 
-          <div className={`${isOpen ? 'flex-col absolute right-2 mt-48 lg:hidden flex-wrap bg-orange-500 bg-opacity-90 rounded-lg' : 'hidden'} items-center`}>
-              <a href="#placas" className="block px-2 py-1 text-base font-medium text-white rounded-lg hover:bg-orange-500">Placas</a>
-              <a href="#contato" className="block px-2 py-2 text-base font-medium text-white rounded-lg hover:bg-orange-500">Contato</a>
-              <a href="#lojas" className="block px-2 py-2 text-base font-medium text-white rounded-lg hover:bg-orange-500">Lojas</a>
+          <div className={`${isOpen ? 'flex-col border-white border-2 text-center w-[200px] absolute right-2 mt-52 font-mono lg:hidden md:hidden flex-wrap text-white bg-orange-500 bg-opacity-90 gap-28 rounded-lg' : 'hidden'} items-center`}>
+              <a href="#placas" className="block px-2 py-2 text-base font-medium  rounded-lg hover:bg-orange-500 ">PLACAS</a>
+              <a href="#contato" className="block px-2 py-2 text-base font-medium  rounded-lg hover:bg-orange-500">CONTATO</a>
+              <a href="#lojas" className="block px-2 py-2 text-base font-medium rounded-lg hover:bg-orange-500">LOJAS</a>
           </div>
 
           <motion.button

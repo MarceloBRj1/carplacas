@@ -16,10 +16,9 @@ const Contato = () => {
   return (
     <motion.section
     id='contato'
-    initial={{ opacity: 0, y: -100 }}
+    initial={{ opacity: 0, y: -30 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    exit={{ opacity: 0, y: 100 }}
     className="bg-white text-white">
       <Separator />
     <motion.div
@@ -54,7 +53,7 @@ const Contato = () => {
 
           <h2 className="mt-4 text-xl font-bold text-blue-900 hover:text-orange-500 ">Instagram</h2>
           <p className=" text-sm text-black">
-            Entre em contato via Instagram e veja as atualizações no nosso Feed
+            Entre em contato via Instagram e veja as atualizações no nosso Feed <br />
             <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> @carplacas</span>
           </p>
         </a>
