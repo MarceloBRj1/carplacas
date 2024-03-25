@@ -17,11 +17,9 @@ const MiddleBanner = () => {
 
   function armazenarImagens() {
     const imagens = [ 
-      '/seila1.png',
-      '/agora1.png',
-      '/agora1.png',
-      '/agora1.png',
-      '/agora1.png',
+      '/banner1.jpeg',
+      '/banner2.jpeg',
+      '/banner3.jpeg',
     ];
     return imagens;
   }
@@ -34,15 +32,14 @@ const MiddleBanner = () => {
     transition={{ duration: 0.5 }}
     
     className='mt-20 sm:block hidden'>
-      <div className=' container'>
-       <Carousel className=''>
-        
-        <CarouselContent className=''>
+      <div className='container'>
+       <Carousel >
+        <CarouselContent className="flex">
         {imagensArmazenadas.map((imagem, index) => (
             <CarouselItem key={index}>
              <div className="p-1">
-               <Card>
-                 <CardContent className="flex  rounded-xl">
+               <Card >
+                 <CardContent className="flex rounded-xl">
                    <Image width={3500} height={500} src={imagem} alt={`Imagem ${index + 1}`} className='px-5 py-5 rounded-lg h-80' />
                  </CardContent>
                 </Card>

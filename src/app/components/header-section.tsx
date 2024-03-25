@@ -12,7 +12,7 @@ const HeaderSection = () => {
   };
     
   return (
-    <motion.header className='pb-6 lg:pb-0 fixed top-0 bg-blue-900 sm:w-screen w-full z-10 sm:'>
+    <motion.header className='pb-6 lg:pb-0 fixed top-0 bg-blue-950 sm:w-screen w-full z-10 sm:'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ const HeaderSection = () => {
           </div>
 
           <div className={`${isOpen ? 'flex-col border-white border-2 text-center w-[200px] absolute right-2 mt-52 font-mono lg:hidden md:hidden flex-wrap text-white bg-orange-500 bg-opacity-90 gap-28 rounded-lg' : 'hidden'} items-center`}>
-              <a href="#placas" className="block px-2 py-2 text-base font-medium  rounded-lg hover:bg-orange-500 ">PLACAS</a>
+              <a href="#placas" className="block px-2 py-2 text-base font-medium rounded-lg hover:bg-orange-500 ">PLACAS</a>
               <a href="#contato" className="block px-2 py-2 text-base font-medium  rounded-lg hover:bg-orange-500">CONTATO</a>
               <a href="#lojas" className="block px-2 py-2 text-base font-medium rounded-lg hover:bg-orange-500">LOJAS</a>
           </div>
@@ -71,7 +71,7 @@ const HeaderSection = () => {
             )}
           </motion.button>
 
-          <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10 font-mono">
+          <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10 font-mono font-bold">
             <a href="#placas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500 hover:underline">PLACAS</a>
             <a href="#contato" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500 hover:underline">CONTATO</a>
             <a href="#lojas" className="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500 hover:underline">LOJAS</a>

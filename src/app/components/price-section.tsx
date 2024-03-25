@@ -18,8 +18,8 @@ const PriceSection = () => {
     exit={{ opacity: 0, y: 100 }}
     transition={{ duration: 0.5 }}
 
-    className=' flex justify-center bg-blue-900 text-center rounded-lg container'>
-    <div className="items-center bg-blue-900">
+    className=' flex justify-center bg-blue-950 text-center rounded-lg container'>
+    <div className="items-center bg-blue-950">
         <h2 className="text-3xl font-semibold tracking-tight text-orange-500 mt-10">Conheça os nossos Produtos</h2>
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <motion.div

@@ -66,7 +66,7 @@ const Contato = () => {
           <h2 className="mt-4 text-xl font-bold text-blue-900 hover:text-orange-500 ">Gmail</h2>
           <p className=" text-sm text-black">
             Envie um email com sua duvida ou sugestão
-            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> atendimentocarplacas <br />@shemplacamentos.com</span>
+            <span className='text-blue-900 text-2xl text-center hover:text-orange-500'> atendimento@carplacas.com</span>
           </p>
         </a>
         

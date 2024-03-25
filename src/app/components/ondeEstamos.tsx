@@ -11,15 +11,15 @@ const AreWe = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.5 }}
-      className='bg-blue-900 min-h-[1200px] lg:min-h-[700px] container mx-auto rounded-lg flex flex-col justify-center items-center'
+      className='bg-blue-950 min-h-[1200px] lg:min-h-[700px] container mx-auto rounded-lg flex flex-col justify-center items-center'
     >
       <h1 className='text-center text-white font-sans font-semibold text-3xl mt-6 mb-10'>
         Grande Novidade: Agora com Duas Lojas para Melhor Atendê-lo!
       </h1>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 w-full max-w-screen-lg'>
-        <div className='bg-gray-800 rounded-lg p-6 flex flex-col justify-center items-center'>
+        <div className='bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center'>
           <span className='text-orange-400 font-sans text-xl'>Matriz: Loja Maestro</span>
-          <p className='font-sans text-white mt-3'>
+          <p className='font-sans text-white text-center mt-3'>
             Av. Maestro Lisboa, 395, Lagoa Sapiranga - Coite, Fortaleza - CE, 60830-185
           </p>
           <iframe
@@ -39,9 +39,9 @@ const AreWe = () => {
             </a>
           </div>
         </div>
-        <div className='bg-gray-800 rounded-lg p-6 flex flex-col justify-center items-center'>
+        <div className='bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center'>
           <span className='text-orange-400 font-sans text-xl'>Filial: Loja Maraponga</span>
-          <p className='font-sans text-white mt-3'>
+          <p className='font-sans text-white text-center mt-3'>
             Av. Godofredo Maciel, 2113 - Maraponga, Fortaleza - CE, 60710-001
           </p>
           <iframe
