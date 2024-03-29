@@ -21,6 +21,7 @@ const PriceSection = () => {
     className=' flex justify-center bg-blue-950 text-center rounded-lg container'>
     <div className="items-center bg-blue-950">
         <h2 className="text-3xl font-semibold tracking-tight text-orange-500 mt-10">Conheça os nossos Produtos</h2>
+        <p className='text-white mt-2'>Placas mercosul em até 3x sem juros!</p>
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <motion.div
         initial={{ opacity: 0, x: -100 }}

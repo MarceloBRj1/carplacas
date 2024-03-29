@@ -8,13 +8,13 @@ const Footer = () => {
       <div className="sm:flex sm:items-center sm:justify-between">
         <div className="flex justify-center text-teal-600 sm:justify-start">
           <a href="#" title="">
-        <Image 
-          className='border-gray-100 rounded border p-2'
-          src={'/carplacasnew.png'}
-          width={230}
-          height={200}
-          alt='carplacas' 
-            />
+          <Image
+            className='lg:mb-4 mt-6'
+            src={'/carplacasmarcelo1.png'}
+            width={200}
+            height={200}
+            alt='carplacas'
+          />
           </a>     
         </div>
 
