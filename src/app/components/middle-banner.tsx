@@ -17,8 +17,8 @@ const MiddleBanner = () => {
 
   function armazenarImagens() {
     const imagens = [ 
-      '/banner1.jpeg',
       '/banner2.jpeg',
+      '/banner1.jpeg',
       '/banner3.jpeg',
     ];
     return imagens;
