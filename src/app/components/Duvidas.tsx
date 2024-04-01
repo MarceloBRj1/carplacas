@@ -17,7 +17,7 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>O que é preciso para trocar a placa?</AccordionTrigger>
           <AccordionContent className=' text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-            É necessário solicitar junto ao DETRAN, pagar as taxas no DETRAN, realizar vistoria do veículo e após esse processo o cliente ira receber uma  guia de autorização de estampagem com esse documento a confecção da placa mercosul pode ser feita.
+            Com a autorização de estampagem em mãos, é necessário que o proprietário do veículo esteja no local para fazer a troca da placa com o seu documento, seja CNH ou RG.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -33,7 +33,7 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>Quais documentos preciso levar?</AccordionTrigger>
           <AccordionContent className='text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-            Guia de autorização de estampagem e documento do veiculo.
+            Guia de autorização de estampagem, documento do veiculo e CNH do proprietário do veículo.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -41,7 +41,7 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>Quanto tempo a placa fica pronta?</AccordionTrigger>
           <AccordionContent className='text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-              A placa fica pronta em 15 minutos e a instalação é feita na hora!
+              A sua placa mercosul é feita na hora e a instalação e feita em menos de 15 minutos!
             </p>
           </AccordionContent>
         </AccordionItem>

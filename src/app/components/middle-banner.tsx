@@ -31,7 +31,7 @@ const MiddleBanner = () => {
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
     
-    className='mt-20 sm:block hidden'>
+    className=' sm:block hidden'>
       <div className='container'>
        <Carousel >
         <CarouselContent className="flex">

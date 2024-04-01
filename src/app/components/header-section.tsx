@@ -12,7 +12,7 @@ const HeaderSection = () => {
   };
     
   return (
-    <motion.header className='pb-6 lg:pb-2 fixed top-0 bg-blue-950 sm:w-screen w-full z-10 sm:'>
+    <motion.header className='pb-6 lg:pb-2 sticky top-0 bg-blue-950 sm:w-screen w-full z-10 sm:'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

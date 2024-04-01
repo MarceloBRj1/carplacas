@@ -30,7 +30,7 @@ const MainSection = () => {
           exit={{ opacity: 0, x: -100 }}
           className="lg:py-24 lg:pl-24"
         >
-          <h2 className="text-3xl  lg:-mt-10 text-blue-900 font-bold sm:text-4xl text-center lg:text-right ">Venha emplacar o seu carro com a gente!</h2>
+          <h2 className="text-3xl  lg:-mt-10 text-blue-900 font-bold sm:text-4xl text-center lg:text-right ">Venha emplacar o seu veículo com a gente!</h2>
 
           <p className="mt-4 text-gray-600 text-center font-sans text-2xl lg:text-right">Na <span className="text-orange-400">CAR PLACAS</span>, priorizamos a qualidade em cada etapa do processo de fabricação. Utilizamos materiais premium e tecnologia de ponta para garantir que sua placa seja durável, resistente e mantenha sua legibilidade ao longo do tempo.</p>
 

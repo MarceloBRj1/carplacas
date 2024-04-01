@@ -18,9 +18,6 @@ const Footer = () => {
           </a>     
         </div>
 
-        <p className=" text-center text-sm text-gray-500 lg:mt-0 lg:text-right font-bold">
-          CAR PLACAS &copy; 2024. Todos direitos Reservados.
-        </p>
         <a target='_blank' href="
         https://www.instagram.com/gruposhautomotivo?igsh=MXJ0dTFtc2c0dmp2YQ==">
         <Image 
@@ -33,6 +30,14 @@ const Footer = () => {
         </a>
       </div>
   </div>
+    <div className='bg-blue-950 h-[60px] sm:text-sm text-center text-white text-lg justify-between lg:mt-0 font-bold'>
+      <div className='h-[50px] text-center sm:text-sm text-white text-lg flex justify-between items-center mx-4 sm:mx-auto lg:mx-10 lg:mt-0 lg:font-bold'>
+        <p className="w-3/4 sm:w-auto ml-12 lg:ml-0 mt-3">
+          CAR PLACAS &copy; 2024. Todos direitos Reservados.
+        </p>
+        <span className='hidden lg:block mt-3'>CNPJ: 52.920.962.0001-62</span>
+      </div>
+    </div>
 </footer>
   )
 }

@@ -7,6 +7,7 @@ import Contato from './components/contato'
 import Footer from './components/footer'
 import Duvidas from './components/Duvidas'
 import Zapfloat from './components/Zapfloat'
+import Headertop from './components/Headertop'
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
   
   return (
   <div>
+    <Headertop />
     <HeaderSection />
     <MiddleBanner />
     <MainSection />
