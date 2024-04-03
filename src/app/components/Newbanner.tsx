@@ -25,7 +25,7 @@ const Newbanner = () => {
 
 
   return (
-    <div className='container mt-2'>  
+    <div className='container hidden lg:block mt-2'>  
       <Swiper
       effect='coverflow'
       coverflowEffect={{
@@ -45,7 +45,7 @@ const Newbanner = () => {
           <SwiperSlide key={foto.id}>
             <div>
               <Image 
-              className='w-full sm:h-90 h-90 object-cover'
+              className='w-full sm:h-90 h-90 object-cover rounded-lg'
               width={3500} height={500} 
               src={foto.imagem} 
               alt="imagem" />

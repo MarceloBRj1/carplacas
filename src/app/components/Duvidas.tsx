@@ -25,7 +25,7 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>Quando é necessário fazer a troca de placas?</AccordionTrigger>
           <AccordionContent className=' text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-            A troca da placa pode ser feita de forma voluntaria pelo proprietário do carro, em caso de perca ou roubo, avaria da placa antiga do veiculo e transferência do veiculo
+            A troca da placa pode ser feita de forma voluntária pelo proprietário do carro, em caso de perca ou roubo, avaria da placa antiga do veículo e transferência do veículo
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -33,7 +33,7 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>Quais documentos preciso levar?</AccordionTrigger>
           <AccordionContent className='text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-            Guia de autorização de estampagem, documento do veiculo e CNH do proprietário do veículo.
+            Guia de autorização de estampagem e CNH do proprietário do veículo.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -41,14 +41,14 @@ const Duvidas = () => {
           <AccordionTrigger className='text-xl text-blue-900 lg:ml-20'>Quanto tempo a placa fica pronta?</AccordionTrigger>
           <AccordionContent className='text-center lg:text-left lg:ml-14'>
             <p className='text-black text-xl lg:ml-6 lg:mr-2'>
-              A sua placa mercosul é feita na hora e a instalação e feita em menos de 15 minutos!
+              A fabricação e instalação da placa mercosul é feita em menos de 15 minutos!
             </p>
           </AccordionContent>
         </AccordionItem>
       </Accordion>  
 
       <div className='flex-block'>
-        <h1 className='text-center text-xl'>Para qualquer outra dúvida nós chame no <span className='text-lime-500 cursor-pointer hover:underline'>Whatsapp</span> e teremos o prazer em lhe ajudar!</h1>
+        <h1 className='text-center text-xl'>Mais dúvidas? Fale com um de nossos consultores no <span className='text-lime-500 cursor-pointer hover:underline'>Whatsapp</span> e teremos o prazer em lhe ajudar!</h1>
       </div>
     </section>
   )

@@ -63,13 +63,22 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
       </motion.div>
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue-800 bg-opacity-50 h-screen" onClick={handleClickOutside}>
-          <div ref={modalRef} className="bg-white p-8 rounded-lg max-w-7xl flex flex-wrap" onClick={(e) => e.stopPropagation()}>
-              <h1 className="text-3xl flex text-red-900 font-bold mb-4">EM DESENVOLVIMENTO!!!</h1>
-              <h2 className="text-2xl text-blue-900 font-bold mb-4">{modelo}</h2>
-                <div className="bg-gray-300 flex p-4">
-                  <Image {...imgProps} />
+          <div ref={modalRef} className="bg-white p-8 rounded-lg max-w-7xl" onClick={(e) => e.stopPropagation()}>
+              <div >
+              <h1 className='text-3xl text-blue-950 bold'>{modelo}</h1>
+              </div>
+            <div className='grid grid-cols-2'>
+              <div>
+                <div>
+                  <Image className='h-full w-full object-contain object-center lg:h-[500px]] lg:w-[300px]' {...imgProps} />
                 </div>
-              <p className="text-white mt-4">{subtitle}</p>
+              </div>
+              <div>
+                <h1>direita</h1>
+              </div>
+
+            </div> 
+
               <button className="bg-red-500 px-4 py-2 rounded-lg mt-10 flex absolute top-0 right-12" onClick={() => setShowModal(false)}>
                 X
               </button>

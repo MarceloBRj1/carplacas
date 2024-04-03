@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const MainSection = () => {
   return (
-    <section className="container mx-auto max-w-screen-xl px-4 lg:mt-0 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 border-transparent">
+    <section className="container mx-auto max-w-screen-xl px-4 lg:mt-0 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-12 border-transparent">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
@@ -32,7 +32,7 @@ const MainSection = () => {
         >
           <h2 className="text-3xl  lg:-mt-10 text-blue-900 font-bold sm:text-4xl text-center lg:text-right ">Venha emplacar o seu veículo com a gente!</h2>
 
-          <p className="mt-4 text-gray-600 text-center font-sans text-2xl lg:text-right">Na <span className="text-orange-400">CAR PLACAS</span>, priorizamos a qualidade em cada etapa do processo de fabricação. Utilizamos materiais premium e tecnologia de ponta para garantir que sua placa seja durável, resistente e mantenha sua legibilidade ao longo do tempo.</p>
+          <p className="mt-4 text-gray-600 text-center font-sans text-2xl lg:text-right">Na <span className="text-orange-400">CAR </span> <span className='text-blue-950'>PLACAS</span>, priorizamos a qualidade em cada etapa do processo de fabricação. Utilizamos materiais premium e tecnologia de ponta para garantir que sua placa seja durável, resistente e mantenha sua legibilidade ao longo do tempo.</p>
 
           <Button size={'lg'} className='flex mx-auto mt-10 lg:ml-40 bg-orange-400 hover:bg-blue-900 focus:bg-blue-900'> 
           <a className='text-xl' target='_blank' href="https://api.whatsapp.com/send?phone=5585996950064&text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">Entre em contato conosco</a></Button>

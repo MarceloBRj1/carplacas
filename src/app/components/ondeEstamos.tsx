@@ -18,7 +18,7 @@ const AreWe = () => {
       </h1>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 w-full max-w-screen-lg'>
         <div className='bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center'>
-          <span className='text-orange-400 font-sans text-xl'>Matriz: Loja Maestro</span>
+          <span className='text-orange-400 font-sans text-xl'>Filial: Loja Maestro</span>
           <p className='font-sans text-white text-center mt-3'>
             Av. Maestro Lisboa, 395, Lagoa Sapiranga - Coite, Fortaleza - CE, 60830-185
           </p>
@@ -40,7 +40,7 @@ const AreWe = () => {
           </div>
         </div>
         <div className='bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center'>
-          <span className='text-orange-400 font-sans text-xl'>Filial: Loja Maraponga</span>
+          <span className='text-orange-400 font-sans text-xl'>Matriz: Loja Maraponga</span>
           <p className='font-sans text-white text-center mt-3'>
             Av. Godofredo Maciel, 2113 - Maraponga, Fortaleza - CE, 60710-001
           </p>
