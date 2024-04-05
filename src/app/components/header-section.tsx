@@ -1,4 +1,3 @@
-'use client'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import DropdownSide from './dropdown-sidebar';
@@ -12,12 +11,12 @@ const HeaderSection = () => {
   };
     
   return (
-    <motion.header className='pb-6 lg:pb-2 sticky top-0 bg-blue-950 sm:w-screen w-full z-10 sm:'>
+    <motion.header className='pb-6 lg:pb-2 sticky top-0 bg-blue-950 sm:w-screen w-full z-10 sm:'>  
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
-        className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8"
+        className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8 relative" 
       >
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">

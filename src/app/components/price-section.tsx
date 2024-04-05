@@ -1,96 +1,76 @@
 'use client'
 import React, { useEffect } from 'react'
 import Image  from 'next/image'
-import CardPrice from './cardprice'
 import { motion } from 'framer-motion'
+import { Separator } from '@/components/ui/separator'
 
 
 const PriceSection = () => {
-  const animProps = {
-    initial: { opacity: 0, y: 50 },
-    whileInView: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: 50 }
-  }
   return (
-    <motion.div id='placas' 
-    initial={{ opacity: 0, y: 100 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: 100 }}
-    transition={{ duration: 0.5 }}
-
-    className=' flex sm:-mt-0 lg:-mt-10 justify-center bg-blue-950 text-center rounded-lg container'>
-    <div className="items-center bg-blue-950">
-        <h2 className="text-3xl font-semibold tracking-tight text-orange-500 mt-10">Conheça os nossos Produtos</h2>
-        <h3 className='text-white mt-2 text-lg'>Placas mercosul em até 3x sem juros!</h3>
-      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        
-
-        className="grid grid-cols-1 gap-5 justify-center lg:grid lg:grid-cols-4 lg:gap-8">
-     <CardPrice
-          modelo="Placa para Carro"
-          price="280"
-          desconto='259,99'
-          descricao='Identificação veicular moderna e segura, com faixa azul superior contendo o nome do país e bandeira do Mercosul. Caracteres alfanuméricos de alta legibilidade fornecem informações do veículo. Tecnologia avançada inclui QR code e chip de identificação, garantindo segurança e facilitando fiscalização. Símbolo de integração regional e modernizaçã'
-          Image={Image}
-          className='h-full w-full'
-          imgProps={{
-            src: '/placatcerto.png',
-            alt: 'placa para carro',
-            width: 300,
-              height: 0,
-           }}
-           parcela='3x sem juros'
-           subtitle='Particular, Aluguel e Oficial'
-      />
-        <CardPrice
-            modelo="Placa para Moto"
-            price="180"
-            desconto='159,99'
-            Image={Image}
-            parcela='3x sem juros'
-            subtitle='Particular, Aluguel e Oficial'
-            className='h-full w-full'
-            imgProps={{
-              src: '/moto22.png',
-              alt: 'placa para moto',
-              width: 600,
-              height: 200,
-            }}
-        />
-      <CardPrice
-          modelo="Suporte para placa"
-          price="20"
-          Image={Image}
-          className='h-full w-full'
-          imgProps={{
-            src: '/suporte22.png',
-            alt: 'suporte para carro',
-            width: 300,
-              height: 0,
-           }}
-      />
-      <CardPrice
-          modelo="Lacre para Parafuso"
-          price="10"
-          Image={Image}
-          className='h-full w-full' 
-          imgProps={{
-            src: '/cbm2.png',
-            alt: 'lacre para parafusos',
-            width: 300,
-            height: 0,
-           }}
-      />
-      </motion.div>
-     
+<div className="bg-white -mt-24 py-24 sm:py-32">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl text-center">
+      <p className="mt-2 text-4xl font-bold tracking-tight text-blue-950 sm:text-5xl">Conheça os nossos Produtos
+      </p>
+      <p className="text-base font-semibold leading-7 text-orange-600">Os melhores preços da região.</p>
+    </div>
+    <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-cyan-600"><Separator /></p>
+    <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div className="rounded-3xl p-8 ring-1 xl:p-10 ring-blue-900">
+        <h3 id="tier-freelancer" className="text-lg font-semibold leading-8 text-orange-600">Placa para Moto</h3>
+        <p className="mt-6 flex items-baseline gap-x-1">
+          <span className="text-4xl font-bold tracking-tight text-orange-500">R$149,99</span>
+          <span className="text-sm font-semibold leading-6 text-blue-900">à vista</span>
+        </p>
+        <a href="#" aria-describedby="tier-freelancer" className="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-900 text-white shadow-sm hover:bg-orange-500 ">Comprar</a>
+        <ul role="list" className="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-400">
+          <li className="flex gap-x-3 text-slate-900 text-lg">
+            <svg className="h-6 w-5 flex-none text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            PIV no padrão Mercosul com dimensão de 200mm x 170mm para motocicletas.
+          </li>
+        </ul>
+        <Image src="/moto2.png" alt="Moto" width={280} height={280} className='ml-2 lg:ml-4 flex' />
+      </div>
+      <div className="rounded-3xl p-8 ring-1 xl:p-10 ring-blue-900">
+        <h3 id="tier-freelancer" className="text-lg font-semibold leading-8 text-orange-600">Placa para Carro</h3>
+        <p className="mt-6 flex items-baseline gap-x-1">
+          <span className="text-4xl font-bold tracking-tight text-orange-500">R$259,99</span>
+          <span className="text-sm font-semibold leading-6 text-blue-900">à vista</span>
+        </p>
+        <a href="#" aria-describedby="tier-freelancer" className="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-900 text-white shadow-sm hover:bg-orange-500 ">Comprar</a>
+        <ul role="list" className="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-400">
+          <li className="flex gap-x-3 text-slate-900 text-lg">
+            <svg className="h-6 w-5 flex-none text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            PIV no padrão Mercosul, com dimensão de 400mm x 130mm para automóveis em geral.
+          </li>
+        </ul>
+        <Image src="/placacarro.png" alt="Moto" width={220} height={280} className='ml-11 lg:ml-10 flex' />
+      </div>
+      <div className="rounded-3xl p-8 ring-1 xl:p-10 ring-blue-900">
+        <h3 id="tier-freelancer" className="text-lg font-semibold leading-8 text-orange-600">Placa para Moto</h3>
+        <p className="mt-6 flex items-baseline gap-x-1">
+          <span className="text-4xl font-bold tracking-tight text-orange-500">R$149,99</span>
+          <span className="text-sm font-semibold leading-6 text-blue-900">à vista</span>
+        </p>
+        <a href="#" aria-describedby="tier-freelancer" className="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-900 text-white shadow-sm hover:bg-orange-500 ">Comprar</a>
+        <ul role="list" className="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-400">
+          <li className="flex gap-x-3 text-slate-900 text-lg">
+            <svg className="h-6 w-5 flex-none text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            PIV no padrão Mercosul com dimensão de 200mm x 170mm para motocicletas.
+          </li>
+        </ul>
+        <Image src="/moto2.png" alt="Moto" width={280} height={280} className='ml-2 lg:ml-4 flex' />
+      </div>
     </div>
   </div>
-    </motion.div>
-    
+</div>
+
   )
 }
 

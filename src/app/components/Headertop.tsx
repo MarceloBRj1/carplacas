@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Headertop = () => {
   const [copied, setCopied] = useState(false);
@@ -19,6 +20,13 @@ const Headertop = () => {
 
   return (
     <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <Image
+        src={'/detrance.png'} 
+        width={100}
+        height={200}
+        alt='carplacas'
+        className='top-10 left-0 rounded-lg ring-yellow-400 hidden lg:block justify-end' 
+      />  
       <div className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
         <div className="aspect-[577/310] w-[36.0625rem] bg-white opacity-30" />
       </div>
@@ -45,7 +53,7 @@ const Headertop = () => {
           <FaInstagram size={35} fill='#E1306C'/>
         </a>
       </div>
-      {copied && <div style={{ position: 'fixed', bottom: '20px', left: '20px', backgroundColor: 'orange', color: '#fff', padding: '10px 20px', borderRadius: '5px' }}>O número foi copiado!</div>}
+      {copied && <div style={{ position: 'fixed', bottom: '20px', left: '20px', backgroundColor: 'orange', color: '#fff', padding: '10px 20px', borderRadius: '5px', zIndex: 100 }}>O número foi copiado!</div>}
     </div>
   );
 };
