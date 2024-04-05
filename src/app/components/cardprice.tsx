@@ -1,13 +1,16 @@
 'use client'
 import React, { useState, useRef, useEffect, MouseEvent } from 'react'
 import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 import { NextComponentType } from 'next';
 
 interface CardPriceProps {
   modelo: string;
   price: string;
+  desconto?: string;
   Image: NextComponentType<any, any, any>;
   className?: string;
+  descricao?: string;
   imgProps: {
     src: string;
     alt: string;
@@ -19,7 +22,7 @@ interface CardPriceProps {
   subtitle?: string;
 }
 
-const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, parcela, subtitle }) => {
+const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, parcela, subtitle, descricao,desconto }) => {
   const [showModal, setShowModal] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -64,17 +67,34 @@ const CardPrice: React.FC<CardPriceProps> = ({ modelo, price, Image, imgProps, p
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue-800 bg-opacity-50 h-screen" onClick={handleClickOutside}>
           <div ref={modalRef} className="bg-white p-8 rounded-lg max-w-7xl" onClick={(e) => e.stopPropagation()}>
-              <div >
-              <h1 className='text-3xl text-blue-950 bold'>{modelo}</h1>
+              <div className='flex mb-4 text-center justify-center'>
+                 <h1 className='text-4xl text-blue-950 bold'>{modelo}</h1>           
               </div>
-            <div className='grid grid-cols-2'>
+
+            <div className='grid grid-cols-2 bg-blue-950 rounded-lg'>
               <div>
-                <div>
-                  <Image className='h-full w-full object-contain object-center lg:h-[500px]] lg:w-[300px]' {...imgProps} />
+                <div className='h-[500px] w-[300px]'>
+                  <Image className='h-[340px] w-[250px] object-contain object-center lg:h-[500px]] lg:w-[300px]' {...imgProps} />
                 </div>
               </div>
-              <div>
-                <h1>direita</h1>
+              <div className='text-white mt-20'>
+                <h1>{descricao}</h1>
+                <h1>{subtitle}</h1>
+                <div className='flex mt-10'>
+                   <div>
+                    <span className='text-gray-600'>Preço á vista:</span>
+                    <span className='text-xl font-semibold'>R$ {desconto}</span>
+                  </div>
+                  <div className='mr-4 '>
+                    
+                    <span className='text-xl font-semibold'>R$ {price}</span>
+                  </div>
+                  
+                </div>
+
+                <div className='flex text-center justify-center mt-10'>
+                  <Button className='bg-orange-500 px-10 text-2xl py-6 rounded-lg'>Comprar</Button>
+                </div>
               </div>
 
             </div> 

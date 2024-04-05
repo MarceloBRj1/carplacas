@@ -32,7 +32,9 @@ const PriceSection = () => {
         className="grid grid-cols-1 gap-5 justify-center lg:grid lg:grid-cols-4 lg:gap-8">
      <CardPrice
           modelo="Placa para Carro"
-          price="280"
+          price="Em até 3x no cartão:280"
+          desconto='259,99'
+          descricao='Identificação veicular moderna e segura, com faixa azul superior contendo o nome do país e bandeira do Mercosul. Caracteres alfanuméricos de alta legibilidade fornecem informações do veículo. Tecnologia avançada inclui QR code e chip de identificação, garantindo segurança e facilitando fiscalização. Símbolo de integração regional e modernizaçã'
           Image={Image}
           className='h-full w-full'
           imgProps={{
@@ -46,7 +48,8 @@ const PriceSection = () => {
       />
         <CardPrice
             modelo="Placa para Moto"
-            price="180"
+            price="Em até 3x no cartão: 180"
+            desconto='159,99'
             Image={Image}
             parcela='3x sem juros'
             subtitle='Particular, Aluguel e Oficial'
@@ -72,7 +75,7 @@ const PriceSection = () => {
       />
       <CardPrice
           modelo="Lacre para Parafuso"
-          price="15"
+          price="10"
           Image={Image}
           className='h-full w-full' 
           imgProps={{

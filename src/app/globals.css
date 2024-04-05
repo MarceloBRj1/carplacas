@@ -4,9 +4,9 @@
  
 @layer base {
   :root {
-    .swiper-button-next { color: orange; }
-    .swiper-button-prev { color: orange; }
-    .swiper-pagination-bullet   { background-color: orange; }
+    .swiper-button-next { color: white; }
+    .swiper-button-prev { color: white; }
+    .swiper-pagination-bullet   { background-color: white; }
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
