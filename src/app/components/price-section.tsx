@@ -32,7 +32,7 @@ const PriceSection = () => {
         className="grid grid-cols-1 gap-5 justify-center lg:grid lg:grid-cols-4 lg:gap-8">
      <CardPrice
           modelo="Placa para Carro"
-          price="Em até 3x no cartão:280"
+          price="280"
           desconto='259,99'
           descricao='Identificação veicular moderna e segura, com faixa azul superior contendo o nome do país e bandeira do Mercosul. Caracteres alfanuméricos de alta legibilidade fornecem informações do veículo. Tecnologia avançada inclui QR code e chip de identificação, garantindo segurança e facilitando fiscalização. Símbolo de integração regional e modernizaçã'
           Image={Image}
@@ -48,7 +48,7 @@ const PriceSection = () => {
       />
         <CardPrice
             modelo="Placa para Moto"
-            price="Em até 3x no cartão: 180"
+            price="180"
             desconto='159,99'
             Image={Image}
             parcela='3x sem juros'
